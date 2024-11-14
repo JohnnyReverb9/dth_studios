@@ -1,7 +1,7 @@
 <?php
 
+use App\Http\Controllers\ControllerMainPage;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// GET routes
+Route::get('/', [ControllerMainPage::class, "index"]);
